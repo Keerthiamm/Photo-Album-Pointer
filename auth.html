@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>firebase form auth</title>
+        <link rel="stylesheet" href="auth.css">
+        <script type="module" src="auth.js"></script>
+    </head>
+    <body>
+        <div class="center-box" id="login-div" >
+            <h2>Login</h2>
+
+
+    <input type="email" id="login-email" class="text-field" name="login-email" placeholder="Email" required/> <br>
+    <input type="password" id="login-password" class="text-field" name="login-password" placeholder="Password" required/> <br>
+            <button id="login-btn" class="btn-style">Login</button> <br>
+            <button id="reg-btn" class="an-btn">  Don't have an account? Register</button>
+        </div>
+
+        <div class="center-box" id="register-div">
+            <h2>Register</h2>
+            <input type="username" id="register-username" class="text-field" name="register-username" placeholder="Username" required/> <br> <!-- iadded -->
+            <input type="email" id="register-email" class="text-field" name="register-email" placeholder="Email" required/> <br>
+             <input type="password" id="register-password" class="text-field" name="register-password" placeholder="Password" required/> <br>
+            
+            <button id="register-btn" class="btn-style"> Register </button><br>
+            <button id="log-btn" class="an-btn">  Have an account? Login </button>
+        </div>
+       
+  <div id="result-box">
+    <h3 id="result"></h3>
+  </div>
+        
+    </body>
+    <!-- <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-app.js";
+        import { getDatabase } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-database.js";
+        import { getAuth, createUserWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js";
+
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyA0JV7ylP9FhjK0lyim4VzdR3UJV3pzlQY",
+          authDomain: "auth-6611d.firebaseapp.com",
+          databaseURL: "https://auth-6611d-default-rtdb.firebaseio.com",
+          projectId: "auth-6611d",
+          storageBucket: "auth-6611d.appspot.com",
+          messagingSenderId: "244695094374",
+          appId: "1:244695094374:web:1342b3f112a1baa36249a7"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const database=getDatabase(app);
+        const auth = getAuth();
+        register-btn.addEventListener('click',(e)=>{
+            var username=document.getElementById('register-username').value;
+            var email=document.getElementById('register-email').value;
+            var password=document.getElementById('register-password').value;
+            var username=document.getElementById('register-confirmpassword').value;
+
+            createUserWithEmailAndPassword(auth, email, password)
+           .then((userCredential) => {
+             // Signed up 
+             const user = userCredential.user;
+             alert('user created'); //here we can add our code so that after auth it will redirect to that page
+              // ...
+            })
+            .catch((error) => {
+            const errorCode = error.code;
+         const errorMessage = error.message;
+           // ..
+           alert(errorMessage);
+           });
+        });
+      </script> -->
+</html>

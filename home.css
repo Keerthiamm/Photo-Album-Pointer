@@ -1,0 +1,121 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: rgb(215, 225, 235);
+}
+h1{
+    color:rgb(22, 15, 38);   
+}
+.album-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 150px;
+    margin: 10px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+
+.main-photo {
+    max-width: 500px;
+    margin: 20px auto;
+    display: none;
+}
+
+.navbar{
+    background-color: rgb(54, 63, 79);
+    border-radius:36px;
+    width: 55%;
+    display:flex;
+    justify-content:flex-end;
+    align-items: center;
+    margin:0 auto;
+    height: 55px;
+    margin-top: 45px;
+    margin-bottom: 40px;
+}
+.navbar ul{
+    overflow:auto;
+}
+.navbar li{
+    float:left;
+    list-style:none;
+    margin:13px 21px;
+   font-size: x-large;
+
+}
+.navbar li a{
+    padding:3px 3px;
+    text-decoration: none;
+    color:aliceblue;
+}
+.navbar li a:hover{
+    color:palevioletred;
+}
+/* .search{
+    float:right;
+    padding: 17px 75px;
+    color:rgb(38, 133, 216);
+} */
+.navbar input{
+    border:2px solid black;
+    border-radius: 14px;
+    padding:3px 17px;
+    width:129px;
+}
+.logo{
+    text-decoration: none;
+    float:left;
+    font-size: x-large;
+    font-style: italic;
+    font-family: "Arial", sans-serif;
+    margin:10px 10px;
+    color:rgb(25, 15, 38);
+}
+.login{
+    text-decoration: none;
+    float:right;
+    font-size: x-large;
+    font-style: italic;
+    font-family: "Arial", sans-serif;
+    margin:10px 10px;
+    color:rgb(0, 0, 0);
+}
+
+
+
+/* Popup Box Styles */
+/* .popup-box {
+    display: none;
+    position: absolute;
+    background-color: rgb(131, 136, 144);
+    border: 1px solid #090909;
+    border-radius: 1px;
+    max-height: 150px;
+    overflow-y: auto;
+    z-index: 100;
+}
+
+.popup-box ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+
+}
+
+.popup-box li {
+    padding: 1px 5px;
+    cursor: pointer;
+    font-size: medium;
+}
+
+/* Show the popup when the input is focused */
+/* .search input:focus + .popup-box {
+    display: block;
+}  */
